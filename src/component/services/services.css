@@ -1,0 +1,50 @@
+.services__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+}
+
+#services {
+	background-color: rgba(57, 157, 199, 0.8);
+}
+
+.services__item {
+	background: var(--color-bg-variant);
+	padding: .9rem;
+	margin-top: 5rem;
+	min-height: 32rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	transition: var(--transition);
+	transition: box-shadow 0.3s;
+}
+
+.services__item h3 {
+	margin: 1rem 0 1rem;
+	text-align: center;
+	font-size: 1.7rem;
+	padding: 1.3rem;
+	border-bottom: 2px solid white;
+}
+
+.services__item h4 {
+	color: var(--color-light);
+	margin: 4.3rem 1rem;
+	font: bold;
+	font-size: 1.4rem;
+}
+
+@media screen and (max-width:  1024px) {
+	.services__container {
+		grid-template-columns: 1fr 1fr;
+		gap: 1.2rem;
+	}
+}
+
+/**********MQ SMALL DEVICES********/
+@media screen and (max-width:  600px) {
+	.services__container {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}

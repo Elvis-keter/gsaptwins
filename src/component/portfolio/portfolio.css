@@ -1,0 +1,61 @@
+.portfolio__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1.8fr);
+	gap: 2.6rem;
+}
+
+#portfolio {
+	background-color: rgba(57, 157, 199, 0.8);
+}
+
+.portfolio__item {
+	background: var(--color-bg-variant);
+	padding: .9rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	transition: var(--transition);
+	transition: box-shadow 0.3s;
+}
+
+.portfolio__item:hover {
+	border-color: var(--color-primary-variant);
+	box-shadow: 0 0 11px rgba(33, 33, 33, 999.2);
+}
+
+.portfolio__item-image {
+	border-radius: 1.5rem;
+	overflow: hidden;
+	max-height: 160px;
+	margin-top: 0;
+}
+
+.portfolio__item h3 {
+	margin: 1rem 0 1rem;
+}
+
+.portfolio__item h4 {
+	color: var(--color-light);
+	font: bold;
+	font-size: 1.2rem;
+}
+
+.portfolio__item-cta {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 0rem;
+}
+
+@media screen and (max-width:  1024px) {
+	.portfolio__container {
+		grid-template-columns: 1fr 1fr;
+		gap: 1.2rem;
+	}
+}
+
+/**********MQ SMALL DEVICES********/
+@media screen and (max-width:  600px) {
+	.portfolio__container {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}
